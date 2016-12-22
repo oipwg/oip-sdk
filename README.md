@@ -35,13 +35,24 @@ It’s primary purpose is to establish a **decentralized media index**, owned by
 [transferArtifact](https://github.com/dloa/media-protocol#transfer-artifact)  
 [deactivateArtifact](https://github.com/dloa/media-protocol#deactivate-artifact)  
 
-####Standard formulae:  
+####Publishing fee formulae:  
 The OIP formula for calculating the **publish fee** is totally closed-loop and depends entirely on information found either in the Florincoin blockchain or in the publish message itself. It is calculated as a function of its commercial value to the Publisher or as a function of its size in the blockchain if it is being offered for free.  
   
 [Publish Fee, Free Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pf)  
 [Publish Fee, Commercial Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pc)
 
-##To be a contributor to the proof-of-work mining that protects the index:  
+##To check the **pool_margin** for the past 24 hours of a protocol compliant mining pool  
+1.  Lookup and store the current [block](https://api.alexandria.io/florincoin/getMiningInfo) height as **block**  
+2.  Use the **historian** summary [API POST endpoint](api.alexandria.io/alexandria/v1/historian/summary) using:
+<pre><code>
+{
+    "min-block":block-2160,
+    "max-block":block
+}
+</code></pre>
+3.  The **averages** array will include a field labeled **pool_margin**. If this amount is in the ballpark of your target margin on top of mining costs, you may wish to [become an autominer](https://github.com/dloa/sdk#to-become-an-autominer)  
+
+##To become an AutoMiner:  
 1.  Create an account on miningrigrentals.com  
 2.  Make a new “pool profile”  
 <pre><code>algo: Scrypt  
