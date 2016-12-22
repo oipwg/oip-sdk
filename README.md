@@ -32,8 +32,10 @@ a web-hosted front end of some or all of the original content published to the I
 *(paid directly by end users when they pay for a piece of media the retailer put in front of them, mostly using suggestion algorithms within a given front end/marketplace, percent of total sale they get is limited by preferences determined by publishers)*  
 •[Decentralized Full Node](#decentralized-full-node)  
 •**OIP-NPM** - a node.js module built to enable publishing and submitting changes to the OIP index. [Github](https://github.com/dloa/oip-npm)  
-•**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Email to request access]
-•**hosted OIPD API endpoint** - for reading and searching the OIP index.  [v2/media/get/all endpoint](https://api.alexandria.io/alexandria/v2/media/get/all) |  [v2/search endpoint] (https://api.alexandria.io/alexandria/v2/search) |  [v2/search endpoint usage](https://api.alexandria.io/docs/#get-a-specific-artifact)  
+•**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Email to request access]  
+•**hosted OIP API** - for reading and searching the OIP index.  
+>>>v2/media/get/all [endpoint](https://api.alexandria.io/alexandria/v2/media/get/all)  
+v2/search [endpoint] (https://api.alexandria.io/alexandria/v2/search) & [usage](https://api.alexandria.io/docs/#get-a-specific-artifact)  
 
 5. Build an interface using all of the above, or start by forking the components of ours. [Browser](https://github.com/dloa/alexandria-browser), [Publisher](https://github.com/dloa/publisher-web), [Paywall](https://github.com/dloa/paywall-web) & [TradeBot](https://github.com/dloa/alexandria-tradebot)  
 
