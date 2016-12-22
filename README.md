@@ -1,7 +1,7 @@
 ###Protocol Introduction  
 The **Open Index Protocol** is a decentralized application (DApp) which unites a peer-to-peer distribution network (IPFS), a micropayments blockchain (Bitcoin), and a blockchain designed specifically to store messages.  
 
-It’s primary purpose is to establish a fully decentralized **Index** of publish messages describing and facilitating the distribution of original content(**artifacts**), owned by no one collectively and, at the same time, each of it’s **publishers** individually. The individual publish messages are able to describe commerce & tipping preferences, how media files can be found and distributed to end users, in addition to cataloguing and descriptive information, meta tags and more. Thru the use of a standardized schema for JSON messages and a simple set of mutually agreed-upon rules for core functions, the following permission-less **jobs** result, which anyone can compete to capture value from:  
+It’s primary purpose is to establish a fully decentralized **Index** of publish messages describing and facilitating the distribution of original content(**artifacts**). Publishers retain full control of their artifacts, but because it is stored in a blockchain the index not centrally controled by anyone and is transparent to the community at-large. The individual publish messages describe (1)commerce & tipping preferences, (2)how media files can be found and distributed to end users, (3)cataloguing and descriptive information, (4)meta tags and more. Thru the use of a standardized schema for JSON messages and a simple set of mutually agreed-upon rules for core functions, the following permission-less **jobs** result:  
 
 •[**Retailers**](#retailer-node) of artifacts published in the index
 
@@ -83,7 +83,7 @@ a web-hosted front end of some or all of the original content published to the I
 [deactivateArtifact](https://github.com/dloa/media-protocol#deactivate-artifact)  
 
 ####Publishing fee formulae:  
-The OIP formula for calculating the **publish fee** is totally closed-loop and depends entirely on information found either in the Florincoin blockchain or in the publish message itself. It is calculated as a function of its commercial value to the Publisher or as a function of its size in the blockchain if it is being offered for free.  
+The OIP formula for calculating the **publish fee** is closed-loop and based on inputs found either in the Florincoin blockchain or in the publish message. It is calculated as a function of either (1) commercial value to the Publisher or (2) if it is being offered for free, as a function of its size in the blockchain.  
   
 [Publish Fee, Free Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pf)  
 [Publish Fee, Commercial Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pc)
