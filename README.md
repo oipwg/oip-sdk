@@ -1,4 +1,6 @@
 ###Protocol Introduction  
+<a href="https://alexandria.io/browser/#/511c251a4a5b8b9d25631b3f2617eb10412c2771971e202362c4054c878487ad" target="_blank"><img src="https://raw.githubusercontent.com/oipwg/oip-sdk/master/previewimage.png" alt="Protocol Animation"></a>
+
 The **Open Index Protocol** is a decentralized application (DApp) which unites a peer-to-peer distribution network (IPFS), a micropayments blockchain (Bitcoin), and a blockchain designed specifically to store messages.  
 
 It’s primary purpose is to establish a fully decentralized **Index** of publish messages describing and facilitating the distribution of original content(**artifacts**). Publishers retain full control of their artifacts, but because it is stored in a blockchain the index is not centrally controled by anyone and is transparent to the community at-large. The individual publish messages describe (1)commerce & tipping preferences, (2)how media files can be found and distributed to end users, (3)cataloguing and descriptive information, (4)meta tags and more. Thru the use of a standardized schema for JSON messages and a simple set of mutually agreed-upon rules for core functions, the following permission-less **jobs** result:  
@@ -92,11 +94,6 @@ The OIP formula for calculating the **publish fee** is closed-loop and based on 
   
 [Publish Fee, Free Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pf)  
 [Publish Fee, Commercial Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pc)
-
----
-
-###Open Index Protocol Explainer Animation  
-[![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/oipwg/oip-sdk/master/previewimage.png)](https://alexandria.io/browser/#/511c251a4a5b8b9d25631b3f2617eb10412c2771971e202362c4054c878487ad)
 
 ---
 
