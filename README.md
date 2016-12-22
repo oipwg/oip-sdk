@@ -25,20 +25,44 @@ It’s primary purpose is to establish a fully decentralized **Index** of publis
 •**IPFS Daemon** - [IPFS official site](https://ipfs.io/)  |  [Github](https://github.com/ipfs/go-ipfs)  |  [Prebuilt Installer](https://ipfs.io/docs/install/)  
 •**Payment Blockchain Wallet Daemon** - [Bitcoin](https://bitcoin.org/)  |  [Github](https://github.com/bitcoin/bitcoin/)  
 •**Decentralized Digital Rights Locker** - [Pockets](http://pockets.tokenly.com/)  |  [Github](https://github.com/tokenly/pockets)  
-•**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Email to request access]  
+•**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Request access](mailto:devon@alexandria.io)  
 
-####A “Retailer” node  
+####“Retailer” node  
 a web-hosted front end of some or all of the original content published to the Index  
 *(paid directly by end users when they pay for a piece of media the retailer put in front of them, mostly using suggestion algorithms within a given front end/marketplace, percent of total sale they get is limited by preferences determined by publishers)*  
 •[Decentralized Full Node](#decentralized-full-node)  
 •**OIP-NPM** - a node.js module built to enable publishing and submitting changes to the OIP index. [Github](https://github.com/dloa/oip-npm)  
-•**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Email to request access]  
-•**hosted OIP API** - for reading and searching the OIP index.  
-media/get/all [endpoint](https://api.alexandria.io/alexandria/v2/media/get/all) | search [endpoint] (https://api.alexandria.io/alexandria/v2/search) & [usage](https://api.alexandria.io/docs/#get-a-specific-artifact)  
+•**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Request access](mailto:devon@alexandria.io)  
+•**hosted OIP API** - for reading and searching the OIP index. *all artifacts [endpoint](https://api.alexandria.io/alexandria/v2/media/get/all) | search artifacts [endpoint] (https://api.alexandria.io/alexandria/v2/search) & [usage](https://api.alexandria.io/docs/#get-a-specific-artifact)*  
 •**Web Interfaces** - [Browser](https://github.com/dloa/alexandria-browser), [Publisher](https://github.com/dloa/publisher-web), [Paywall](https://github.com/dloa/paywall-web) & [TradeBot](https://github.com/dloa/alexandria-tradebot)  
 
-###an **AutoMiner**  
+####**AutoMiner**  
 *(paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
+
+#####To run a Pool node  
+•**Pool Interface** - Node.js pool portal [Github](https://github.com/dloa/unified-node-open-mining-portal)  
+•**Pool Server** - Node.js stratum pool server [Github](https://github.com/dloa/node-merged-pool)  
+
+#####To check the average **pool_margin** for the past 24 hours of protocol compliant mining pools  
+1.  Lookup the current [block](https://api.alexandria.io/florincoin/getMiningInfo) height and store the result as **block**  
+2.  Use the **historian** summary [API POST endpoint](https://api.alexandria.io/alexandria/v1/historian/summary) using:
+<code><pre>{
+    "min-block":block-2160,
+    "max-block":block
+}</pre></code>  
+3.  The **averages** array will include a field labeled **pool_margin**. If this amount is in the ballpark of your target margin on top of mining costs, you may wish to [become an autominer](#to-become-an-autominer)  
+
+#####To become an AutoMiner:  
+1.  Create an account on miningrigrentals.com  
+2.  Make a new “pool profile”  
+<code><pre> algo: Scrypt  
+ host: api.alexandria.io  
+ port: 3032  
+ worker: yourflorincoinaddress  
+ password: anythingyouwant</pre></code>  
+3.  Create a [miningrigrentals API key](https://www.miningrigrentals.com/account/apikey)  
+4.  Install and start the **autominer_api** application. [Github](https://github.com/dloa/autominer-api)  
+5.  Fund your miningrigrentals.com wallet with some bitcoin, and the autominer-api will automatically start renting rigs if market conditions allow your minimum margin to be met  
 
 ####To become an **AutoDistributor**  
 *(paid by publishers or patrons of content, governed by free floating market prices per MB stored per unit of time and per MB transmitted, limited by caps set per piece of content, since in most cases, a file having any more than ~20 seeders starts to see diminishing returns quickly)*  
@@ -61,30 +85,6 @@ The OIP formula for calculating the **publish fee** is totally closed-loop and d
   
 [Publish Fee, Free Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pf)  
 [Publish Fee, Commercial Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pc)
-
-##To check the **pool_margin** for the past 24 hours of a protocol compliant mining pool  
-1.  Lookup the current [block](https://api.alexandria.io/florincoin/getMiningInfo) height and store the result as **block**  
-2.  Use the **historian** summary [API POST endpoint](https://api.alexandria.io/alexandria/v1/historian/summary) using:
-<pre><code>
-{
-    "min-block":block-2160,
-    "max-block":block
-}
-</code></pre>
-3.  The **averages** array will include a field labeled **pool_margin**. If this amount is in the ballpark of your target margin on top of mining costs, you may wish to [become an autominer](https://github.com/dloa/sdk#to-become-an-autominer)  
-
-##To become an AutoMiner:  
-1.  Create an account on miningrigrentals.com  
-2.  Make a new “pool profile”  
-<pre><code>algo: Scrypt  
-host: api.alexandria.io  
-port: 3032  
-worker: yourflorincoinaddress  
-password: anythingyouwant</code></pre>  
-3.  Create a [miningrigrentals API key](https://www.miningrigrentals.com/account/apikey)  
-4.  Install and start the **autominer_api** application. [Github](https://github.com/dloa/autominer-api)  
-5.  Fund your miningrigrentals.com wallet with some bitcoin, and the autominer-api will automatically start renting rigs if market conditions allow your minimum margin to be met  
-
 
 ###Captured Value  
 ![alt text](https://raw.githubusercontent.com/dloa/sdk/master/captured%20value%20stack.png "Value Capture Stack")  
