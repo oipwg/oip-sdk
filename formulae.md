@@ -1,5 +1,5 @@
 #####`P`  
-*Required Publish Fee, in fiat.*
+*Required Publish Fee, in fiat.*  
 max ([Pf](#pf), [Pc](#pc))  
 #####`QP`  
 *Quantity of Florincoin tokens estimated for Required Publish Fee.*  
