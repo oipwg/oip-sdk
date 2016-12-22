@@ -12,7 +12,10 @@ max ([Pf](#pf), [Pc](#pc))
 if ( [C](#c) < [Cv](#cv), [C](#c), (( log ([C](#c)) - log ([Cv](#cv)) ) x ([Cv](#cv) / [C](#c) ) x [D](#d) ) + [Cv](#cv) )	 
 #####`V`  
 *Value of mined blocks in one day.*  
-[BlocksPerDay](#blocksperday) * [coinbasereward](#coinbasereward) * [fmdUSD](https://api.alexandria.io/flo-market-data/v1/getAll)	 
+[BlocksPerDay](#blocksperday) * [coinbasereward](#coinbasereward) * [fmdUSD](#fmdusd)	 
+#####`fmdUSD`
+*Florincoin's current `USD` market price according to Flo-market-data API*  
+[hosted API endpoint](https://api.alexandria.io/flo-market-data/v1/getAll) | [Github source](https://github.com/oipwg/flo-market-data)  
 #####`s`  
 *artifact's total size in blockchain.*  
 (integer, in bytes)  
