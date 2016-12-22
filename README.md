@@ -43,7 +43,7 @@ a web-hosted front end of some or all of the original content published to the I
 •**Pool Server** - Node.js stratum pool server [Github](https://github.com/dloa/node-merged-pool)  
 
 #####To check the average **pool_margin** for the past 24 hours of protocol compliant mining pools  
-1.  Lookup the current [block](https://api.alexandria.io/florincoin/getMiningInfo) height and store the result as **block**  
+1.  Lookup the current **block** height and store the result as `block` ([hosted API endpoint](https://api.alexandria.io/florincoin/getMiningInfo) | [Github source](https://github.com/oipwg/txcomment-search-api)  
 2.  Use the **historian** summary [API POST endpoint](https://api.alexandria.io/alexandria/v1/historian/summary) using:
 <code><pre>{
     "min-block":block-2160,
