@@ -95,5 +95,10 @@ The OIP formula for calculating the **publish fee** is closed-loop and based on 
 
 ---
 
+###Open Index Protocol Explainer Animation  
+[![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/oipwg/oip-sdk/master/previewimage.png)](https://alexandria.io/browser/#/511c251a4a5b8b9d25631b3f2617eb10412c2771971e202362c4054c878487ad)
+
+---
+
 ###Captured Value  
 ![alt text](https://raw.githubusercontent.com/dloa/sdk/master/captured%20value%20stack.png "Value Capture Stack")  
