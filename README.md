@@ -34,8 +34,7 @@ a web-hosted front end of some or all of the original content published to the I
 •**OIP-NPM** - a node.js module built to enable publishing and submitting changes to the OIP index. [Github](https://github.com/dloa/oip-npm)  
 •**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Email to request access]  
 •**hosted OIP API** - for reading and searching the OIP index.  
-v2/media/get/all [endpoint](https://api.alexandria.io/alexandria/v2/media/get/all)  
-v2/search [endpoint] (https://api.alexandria.io/alexandria/v2/search) & [usage](https://api.alexandria.io/docs/#get-a-specific-artifact)  
+media/get/all [endpoint](https://api.alexandria.io/alexandria/v2/media/get/all) | search [endpoint] (https://api.alexandria.io/alexandria/v2/search) & [usage](https://api.alexandria.io/docs/#get-a-specific-artifact)  
 •**Web Interfaces** - [Browser](https://github.com/dloa/alexandria-browser), [Publisher](https://github.com/dloa/publisher-web), [Paywall](https://github.com/dloa/paywall-web) & [TradeBot](https://github.com/dloa/alexandria-tradebot)  
 
 ###an **AutoMiner**  
