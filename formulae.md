@@ -8,7 +8,7 @@ max ([Pf](#pf), [Pc](#pc))
 *Publish Fee, Free Artifacts.*  
 [V](#v) * [s](#s) / [blockchainsize](#blockchainsize)	 
 #####`Pc`  
-*Publish Fee, Commercial Artifacts.*
+*Publish Fee, Commercial Artifacts.*  
 if ( [C](#c) < [Cv](#cv), [C](#c), (( log ([C](#c)) - log ([Cv](#cv)) ) x ([Cv](#cv) / [C](#c) ) x [D](#d) ) + [Cv](#cv) )	 
 #####`V`  
 *Value of mined blocks in one day.*  
@@ -32,10 +32,10 @@ if ( [C](#c) < [Cv](#cv), [C](#c), (( log ([C](#c)) - log ([Cv](#cv)) ) x ([Cv](
 *artifact "cost", defined as the average between its total minPlay and its total sugBuy values*  
 avg ([m](#m),[b](#b))
 #####`m`  
-*sum of all of the minPlay prices in a given artifact*
+*sum of all of the minPlay prices in a given artifact*  
 ∑ (m₁,m₂, ...)  
 #####`b`  
-sum of all of the sugBuy prices in a given artifact
+sum of all of the sugBuy prices in a given artifact  
 ∑ (b₁,b₂, ...)	 
 #####`Cv`  
 *mean average of all artifact "cost"s in entire library.*  
