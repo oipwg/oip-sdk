@@ -1,6 +1,3 @@
-###Value Capture Stack  
-![alt text](https://raw.githubusercontent.com/dloa/sdk/master/captured%20value%20stack.png "Value Capture Stack")  
-
 ###Protocol Introduction  
 The **Open Index Protocol** is a decentralized application (DApp) which unites a peer-to-peer distribution network (IPFS), a micropayments blockchain (Bitcoin), and a blockchain designed specifically to store messages.  
 
@@ -20,8 +17,13 @@ It’s primary purpose is to establish a **decentralized media index**, owned by
 •**Retailers** of artifacts published in the index  
 *(paid directly by end users when they pay for a piece of media the retailer put in front of them, mostly using suggestion algorithms within a given front end/marketplace, percent of total sale they get is limited by preferences determined by publishers)*  
 
+##Fully Decentralized Node
+•**Index Blockchain Wallet Daemon** - [Florincoin official site](http://florincoin.org/)  |  [Github](https://github.com/florincoin/florincoin)  
+*(note:[Enable RPC access](https://github.com/dloa/alexandria-docs/blob/master/florincoin-lin64-install.md))*  
+•**IPFS Daemon** [IPFS official site] [Github]
+
 ##To be a “retailer” (i.e., to host a front end/marketplace)  
-1.  Install a [florincoin wallet daemon](http://florincoin.org/) on your web server. [Github](https://github.com/florincoin/florincoin)  
+  
 2.  Enable RPC access to the florincoin wallet. [Instructions](https://github.com/dloa/alexandria-docs/blob/master/florincoin-lin64-install.md)  
 3.  Install OIP-NPM, a node.js module built to enable making changes to the OIP index. [Github](https://github.com/dloa/oip-npm)  
 4.  Use our hosted OIPD API endpoint for reading and searching the OIP index.  
@@ -66,3 +68,7 @@ password: anythingyouwant</code></pre>
 3.  Create a [miningrigrentals API key](https://www.miningrigrentals.com/account/apikey)  
 4.  Install and start the **autominer_api** application. [Github](https://github.com/dloa/autominer-api)  
 5.  Fund your miningrigrentals.com wallet with some bitcoin, and the autominer-api will automatically start renting rigs if market conditions allow your minimum margin to be met  
+
+
+###Captured Value  
+![alt text](https://raw.githubusercontent.com/dloa/sdk/master/captured%20value%20stack.png "Value Capture Stack")  
