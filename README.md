@@ -1,37 +1,52 @@
 ###Protocol Introduction  
 The **Open Index Protocol** is a decentralized application (DApp) which unites a peer-to-peer distribution network (IPFS), a micropayments blockchain (Bitcoin), and a blockchain designed specifically to store messages.  
 
-It’s primary purpose is to establish a **decentralized media index**, owned by no one collectively and, at the same time, each of it’s publishers individually. Thru the use of an open message schema and a simple set of mutually agreed-upon rules for core functions, the following permission-less **jobs** are created, which anyone can compete to capture value from:  
+It’s primary purpose is to establish a fully decentralized **Index** of publish messages describing and facilitating the distribution of original content(**artifacts**), owned by no one collectively and, at the same time, each of it’s **publishers** individually. The individual publish messages are able to describe commerce & tipping preferences, how media files can be found and distributed to end users, in addition to cataloguing and descriptive information, meta tags and more. Thru the use of a standardized schema for JSON messages and a simple set of mutually agreed-upon rules for core functions, the following permission-less **jobs** result, which anyone can compete to capture value from:  
 
-•**Publishers** of original content (**artifacts**) to the index  
-*(paid by end users when they connect with an audience that finds their content valuable, at whatever price they and their market agree upon)*  
-
-•**Miners** contributing proofs-of-work to the mutual protection of the index of artifacts  
-*(paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
-
-•**Storage and distribution services** for the media files published to the index *(paid by publishers or patrons of content, governed by free floating market prices per MB stored per unit of time and per MB transmitted, limited by caps set per piece of content, since in most cases, a file having any more than ~20 seeders starts to see diminishing returns quickly)*  
+•**Retailers** of artifacts published in the index
 
 •**Promoters** of artifacts published to the index  
-*(paid directly by end users when they pay for a piece of media the promoter put in front of them, mostly over social media platforms, percent of total sale they get is limited by preferences determined by publishers)*  
 
-•**Retailers** of artifacts published in the index  
+•**AutoMiners** contributing proofs-of-work to the mutual protection of the Index of artifacts  
+
+•**AutoDistributor** provide storage and distribution services for the media files published to the index 
+
+•**Publishers** of original content  to the index  
+
+###Protocol Software  
+
+####Reference "browser" node.js application  
+•**Alexandria Browser** - Index browser reference client  |  [Github](https://github.com/dloa/alexandria-browser)  
+
+####Decentralized Full Node
+•**Index Blockchain Wallet Daemon** - [Florincoin official site](http://florincoin.org/)  |  [Github](https://github.com/florincoin/florincoin)  |  *(note:[Enable RPC access](https://github.com/dloa/alexandria-docs/blob/master/florincoin-lin64-install.md))*  
+•**IPFS Daemon** - [IPFS official site](https://ipfs.io/)  |  [Github](https://github.com/ipfs/go-ipfs)  |  [Prebuilt Installer](https://ipfs.io/docs/install/)  
+•**Payment Blockchain Wallet Daemon** - [Bitcoin](https://bitcoin.org/)  |  [Github](https://github.com/bitcoin/bitcoin/)
+•**Decentralized Digital Rights Locker** - [Pockets](http://pockets.tokenly.com/)  |  [Github](https://github.com/tokenly/pockets)  
+•**OIP Daemon** - Closed repo currently, pending security audit  |  [Email to request access]  
+
+####A “Retailer” node  
+*(i.e., a web-hosted front end of some or all of the original content published to the Index)*  
 *(paid directly by end users when they pay for a piece of media the retailer put in front of them, mostly using suggestion algorithms within a given front end/marketplace, percent of total sale they get is limited by preferences determined by publishers)*  
-
-##Fully Decentralized Node
-•**Index Blockchain Wallet Daemon** - [Florincoin official site](http://florincoin.org/)  |  [Github](https://github.com/florincoin/florincoin)  
-*(note:[Enable RPC access](https://github.com/dloa/alexandria-docs/blob/master/florincoin-lin64-install.md))*  
-•**IPFS Daemon** [IPFS official site] [Github]
-
-##To be a “retailer” (i.e., to host a front end/marketplace)  
-  
-2.  Enable RPC access to the florincoin wallet. [Instructions](https://github.com/dloa/alexandria-docs/blob/master/florincoin-lin64-install.md)  
-3.  Install OIP-NPM, a node.js module built to enable making changes to the OIP index. [Github](https://github.com/dloa/oip-npm)  
-4.  Use our hosted OIPD API endpoint for reading and searching the OIP index.  
+•[Decentralized Full Node](#decentralized-full-node)  
+•**OIP-NPM** - a node.js module built to enable publishing and submitting changes to the OIP index. [Github](https://github.com/dloa/oip-npm)  
+Use our hosted OIPD API endpoint for reading and searching the OIP index.  
 [hosted v2/media/get/all endpoint](https://api.alexandria.io/alexandria/v2/media/get/all)  
 [hosted v2/search endpoint] (https://api.alexandria.io/alexandria/v2/search)  
 [hosted v2/search endpoint usage](https://api.alexandria.io/docs/#get-a-specific-artifact)  
 5. Build an interface using all of the above, or start by forking the components of ours. [Browser](https://github.com/dloa/alexandria-browser), [Publisher](https://github.com/dloa/publisher-web), [Paywall](https://github.com/dloa/paywall-web) & [TradeBot](https://github.com/dloa/alexandria-tradebot)  
 
+##To become an **AutoMiner**  
+*(paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
+
+##To become an **AutoDistributor**  
+*(paid by publishers or patrons of content, governed by free floating market prices per MB stored per unit of time and per MB transmitted, limited by caps set per piece of content, since in most cases, a file having any more than ~20 seeders starts to see diminishing returns quickly)*  
+
+##To become a **Promoter**  
+*(paid directly by end users when they pay for a piece of media the promoter put in front of them, mostly over social media platforms, percent of total sale they get is limited by preferences determined by publishers)*  
+
+##To become a **Publisher**  
+*(Publishers are paid by end users when they connect with an audience that finds their content valuable, at whatever price they and their market agree upon)* 
 
 ####JSON standards:  
 [multipartData](https://github.com/dloa/media-protocol#multipart-data)  
