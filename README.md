@@ -27,17 +27,16 @@ It’s primary purpose is to establish a fully decentralized **Index** of publis
 •**Decentralized Digital Rights Locker** - [Pockets](http://pockets.tokenly.com/)  |  [Github](https://github.com/tokenly/pockets)  
 •**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Request access](mailto:devon@alexandria.io)  
 
-####“Retailer” node  
+####Retailer node  
 a web-hosted front end of some or all of the original content published to the Index  
-*(paid directly by end users when they pay for a piece of media the retailer put in front of them, mostly using suggestion algorithms within a given front end/marketplace, percent of total sale they get is limited by preferences determined by publishers)*  
 •[Decentralized Full Node](#decentralized-full-node)  
 •**OIP-NPM** - a node.js module built to enable publishing and submitting changes to the OIP index. [Github](https://github.com/dloa/oip-npm)  
 •**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Request access](mailto:devon@alexandria.io)  
 •**hosted OIP API** - for reading and searching the OIP index. *all artifacts [endpoint](https://api.alexandria.io/alexandria/v2/media/get/all) | search artifacts [endpoint] (https://api.alexandria.io/alexandria/v2/search) & [usage](https://api.alexandria.io/docs/#get-a-specific-artifact)*  
 •**Web Interfaces** - [Browser](https://github.com/dloa/alexandria-browser), [Publisher](https://github.com/dloa/publisher-web), [Paywall](https://github.com/dloa/paywall-web) & [TradeBot](https://github.com/dloa/alexandria-tradebot)  
+*(paid directly by end users when they pay for a piece of media the retailer put in front of them, mostly using suggestion algorithms within a given front end/marketplace, percent of total sale they get is limited by preferences determined by publishers)*  
 
 ####**AutoMiner**  
-*(paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
 
 #####To run a Pool node  
 •**Pool Interface** - Node.js pool portal [Github](https://github.com/dloa/unified-node-open-mining-portal)  
@@ -55,7 +54,7 @@ a web-hosted front end of some or all of the original content published to the I
 #####To become an AutoMiner:  
 1.  Create an account on miningrigrentals.com  
 2.  Make a new “pool profile”  
-<code><pre> algo: Scrypt  
+<code><pre>algo: Scrypt  
  host: api.alexandria.io  
  port: 3032  
  worker: yourflorincoinaddress  
@@ -63,6 +62,7 @@ a web-hosted front end of some or all of the original content published to the I
 3.  Create a [miningrigrentals API key](https://www.miningrigrentals.com/account/apikey)  
 4.  Install and start the **autominer_api** application. [Github](https://github.com/dloa/autominer-api)  
 5.  Fund your miningrigrentals.com wallet with some bitcoin, and the autominer-api will automatically start renting rigs if market conditions allow your minimum margin to be met  
+*(paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
 
 ####To become an **AutoDistributor**  
 *(paid by publishers or patrons of content, governed by free floating market prices per MB stored per unit of time and per MB transmitted, limited by caps set per piece of content, since in most cases, a file having any more than ~20 seeders starts to see diminishing returns quickly)*  
