@@ -3,15 +3,15 @@ The **Open Index Protocol** is a decentralized application (DApp) which unites a
 
 It’s primary purpose is to establish a fully decentralized **Index** of publish messages describing and facilitating the distribution of original content(**artifacts**), owned by no one collectively and, at the same time, each of it’s **publishers** individually. The individual publish messages are able to describe commerce & tipping preferences, how media files can be found and distributed to end users, in addition to cataloguing and descriptive information, meta tags and more. Thru the use of a standardized schema for JSON messages and a simple set of mutually agreed-upon rules for core functions, the following permission-less **jobs** result, which anyone can compete to capture value from:  
 
-•**Retailers** of artifacts published in the index
+•[**Retailers**](#retailer-node) of artifacts published in the index
 
-•**Promoters** of artifacts published to the index  
+•[**Promoters**](#promoter) of artifacts published to the index  
 
-•**AutoMiners** contributing proofs-of-work to the mutual protection of the Index of artifacts  
+•[**AutoMiners**](#autominer) contributing proofs-of-work to the mutual protection of the Index of artifacts  
 
-•**AutoDistributor** provide storage and distribution services for the media files published to the index 
+•[**AutoDistributor**](#autodistributor) provide storage and distribution services for the media files published to the index 
 
-•**Publishers** of original content  to the index  
+•[**Publishers**](#publisher) of original content  to the index  
 
 ---  
 
@@ -38,7 +38,7 @@ a web-hosted front end of some or all of the original content published to the I
 
 ####**AutoMiner**  
 
-#####To run a Pool node  
+#####To run a **mining pool**  
 •**Pool Interface** - Node.js pool portal [Github](https://github.com/dloa/unified-node-open-mining-portal)  
 •**Pool Server** - Node.js stratum pool server [Github](https://github.com/dloa/node-merged-pool)  
 
@@ -51,7 +51,7 @@ a web-hosted front end of some or all of the original content published to the I
 }</pre></code>  
 3.  The **averages** array will include a field labeled **pool_margin**. If this amount is in the ballpark of your target margin on top of mining costs, you may wish to [become an autominer](#to-become-an-autominer)  
 
-#####To become an AutoMiner:  
+#####**AutoMiner**  
 1.  Create an account on miningrigrentals.com  
 2.  Make a new “pool profile”  
 <code><pre>algo: Scrypt  
@@ -64,14 +64,16 @@ a web-hosted front end of some or all of the original content published to the I
 5.  Fund your miningrigrentals.com wallet with some bitcoin, and the autominer-api will automatically start renting rigs if market conditions allow your minimum margin to be met  
 *(paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
 
-####To become an **AutoDistributor**  
+####**AutoDistributor**  
 *(paid by publishers or patrons of content, governed by free floating market prices per MB stored per unit of time and per MB transmitted, limited by caps set per piece of content, since in most cases, a file having any more than ~20 seeders starts to see diminishing returns quickly)*  
 
-####To become a **Promoter**  
+####**Promoter**  
 *(paid directly by end users when they pay for a piece of media the promoter put in front of them, mostly over social media platforms, percent of total sale they get is limited by preferences determined by publishers)*  
 
-####To become a **Publisher**  
+####**Publisher**  
 *(Publishers are paid by end users when they connect with an audience that finds their content valuable, at whatever price they and their market agree upon)* 
+
+---
 
 ####JSON standards:  
 [multipartData](https://github.com/dloa/media-protocol#multipart-data)  
@@ -85,6 +87,8 @@ The OIP formula for calculating the **publish fee** is totally closed-loop and d
   
 [Publish Fee, Free Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pf)  
 [Publish Fee, Commercial Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pc)
+
+---
 
 ###Captured Value  
 ![alt text](https://raw.githubusercontent.com/dloa/sdk/master/captured%20value%20stack.png "Value Capture Stack")  
