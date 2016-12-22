@@ -13,27 +13,28 @@ It’s primary purpose is to establish a fully decentralized **Index** of publis
 
 •**Publishers** of original content  to the index  
 
+---  
+
 ###Protocol Software  
 
 ####Reference "browser" node.js application  
-•**Alexandria Browser** - Index browser reference client  |  [Github](https://github.com/dloa/alexandria-browser)  
+•**Alexandria Browser** - Index browser reference client  |  [Github](https://github.com/dloa/alexandria-browser)   
 
 ####Decentralized Full Node
 •**Index Blockchain Wallet Daemon** - [Florincoin official site](http://florincoin.org/)  |  [Github](https://github.com/florincoin/florincoin)  |  *(note:[Enable RPC access](https://github.com/dloa/alexandria-docs/blob/master/florincoin-lin64-install.md))*  
 •**IPFS Daemon** - [IPFS official site](https://ipfs.io/)  |  [Github](https://github.com/ipfs/go-ipfs)  |  [Prebuilt Installer](https://ipfs.io/docs/install/)  
-•**Payment Blockchain Wallet Daemon** - [Bitcoin](https://bitcoin.org/)  |  [Github](https://github.com/bitcoin/bitcoin/)
+•**Payment Blockchain Wallet Daemon** - [Bitcoin](https://bitcoin.org/)  |  [Github](https://github.com/bitcoin/bitcoin/)  
 •**Decentralized Digital Rights Locker** - [Pockets](http://pockets.tokenly.com/)  |  [Github](https://github.com/tokenly/pockets)  
-•**OIP Daemon** - Closed repo currently, pending security audit  |  [Email to request access]  
+•**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Email to request access]  
 
 ####A “Retailer” node  
-*(i.e., a web-hosted front end of some or all of the original content published to the Index)*  
+a web-hosted front end of some or all of the original content published to the Index  
 *(paid directly by end users when they pay for a piece of media the retailer put in front of them, mostly using suggestion algorithms within a given front end/marketplace, percent of total sale they get is limited by preferences determined by publishers)*  
 •[Decentralized Full Node](#decentralized-full-node)  
 •**OIP-NPM** - a node.js module built to enable publishing and submitting changes to the OIP index. [Github](https://github.com/dloa/oip-npm)  
-Use our hosted OIPD API endpoint for reading and searching the OIP index.  
-[hosted v2/media/get/all endpoint](https://api.alexandria.io/alexandria/v2/media/get/all)  
-[hosted v2/search endpoint] (https://api.alexandria.io/alexandria/v2/search)  
-[hosted v2/search endpoint usage](https://api.alexandria.io/docs/#get-a-specific-artifact)  
+•**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Email to request access]
+•**hosted OIPD API endpoint** - for reading and searching the OIP index.  [v2/media/get/all endpoint](https://api.alexandria.io/alexandria/v2/media/get/all) |  [v2/search endpoint] (https://api.alexandria.io/alexandria/v2/search) |  [v2/search endpoint usage](https://api.alexandria.io/docs/#get-a-specific-artifact)  
+
 5. Build an interface using all of the above, or start by forking the components of ours. [Browser](https://github.com/dloa/alexandria-browser), [Publisher](https://github.com/dloa/publisher-web), [Paywall](https://github.com/dloa/paywall-web) & [TradeBot](https://github.com/dloa/alexandria-tradebot)  
 
 ##To become an **AutoMiner**  
