@@ -1,23 +1,24 @@
-#Intro  
+###Introduction  
 The **Open Index Protocol** is a decentralized application (DApp) which unites a peer-to-peer distribution network (IPFS), a micropayments blockchain (Bitcoin), and a blockchain designed specifically to store messages.  
-
-It’s primary purpose is to establish a **decentralized media index**, owned by no one collectively and each of it’s publishers individually at the same time. Thru the use of an open message schema and a simple set of mutually agreed-upon rules for core functions, the following permission-less “jobs” are created, which anyone can contribute toward, in exchange for direct financial reward of some sort:  
-•**Publishers** of original content to the index *(paid by end users when they connect with an audience that finds their content valuable, at whatever price they and their market agree upon)*  
-•**Miners** contributing proofs-of-work to the mutual protection of the index *(paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
+  
+It’s primary purpose is to establish a **decentralized media index**, owned by no one collectively and, at the same time, each of it’s publishers individually. Thru the use of an open message schema and a simple set of mutually agreed-upon rules for core functions, the following permission-less “jobs” are created, which anyone can contribute toward, in exchange for direct financial reward of some sort:  
+•**Publishers** of original content (**artifacts**) to the index *(paid by end users when they connect with an audience that finds their content valuable, at whatever price they and their market agree upon)*  
+•**Miners** contributing proofs-of-work to the mutual protection of the index of artifacts *(paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
 •**Storage and distribution services** for the media files published to the index *(paid by publishers or patrons of content, governed by free floating market prices per MB stored per unit of time and per MB transmitted, limited by caps set per piece of content, since in most cases, a file having any more than ~20 seeders starts to see diminishing returns quickly)*  
-•**Promoters** of any or all of the original content published to the index *(paid directly by end users when they pay for a piece of media the promoter put in front of them, mostly over social media platforms, percent of total sale they get is limited by preferences determined by publishers)*  
-•**Retailers** of various content published in the index *(paid directly by end users when they pay for a piece of media the retailer put in front of them, mostly using suggestion algorithms within a given front end/marketplace, percent of total sale they get is limited by preferences determined by publishers)*  
+•**Promoters** of artifacts published to the index *(paid directly by end users when they pay for a piece of media the promoter put in front of them, mostly over social media platforms, percent of total sale they get is limited by preferences determined by publishers)*  
+•**Retailers** of artifacts published in the index *(paid directly by end users when they pay for a piece of media the retailer put in front of them, mostly using suggestion algorithms within a given front end/marketplace, percent of total sale they get is limited by preferences determined by publishers)*  
 
-##Protocol schema for publishing artifacts  
+####JSON standards:  
+[multipartData](https://github.com/dloa/media-protocol#multipart-data)  
+[publishArtifact](https://github.com/dloa/media-protocol#publish-artifact)  
+[editArtifact](https://github.com/dloa/media-protocol#edit-artifact)  
+[transferArtifact](https://github.com/dloa/media-protocol#transfer-artifact)  
+[deactivateArtifact](https://github.com/dloa/media-protocol#deactivate-artifact)  
 
-##Protocol formula for calculating publishing fees
-m  :	artifact's total minPlay cost.															∑ (m₁,m₂, ...)	
-s  :	artifact's total sugBuy cost.								  							∑ (s₁,s₂, ...)	
-C  :	artifact "cost".															              avg (m,s)	
-Cµ :	mean average artifact "cost" for entire library.						avg (C₁,C₂,...)	
-D  :	diff betw artifact cost and avg artifact cost.							C - Cµ	
-P  :	Publish fee.   
-          if ( C < Cµ, C, (( log (C) - log (Cµ) ) x ( Cµ / C ) x D ) + Cµ )  
+####Standard formulae
+The OIP formula for calculating the **publishing fee** is totally closed-loop and depends entirely on information found either in the Florincoin blockchain or in the publish message itself. It is calculated as a function of its commercial value to the Publisher or as a function of its size in the blockchain if it is being offered for free.
+[PublishFreeArtifact](https://github.com/dloa/sdk/blob/master/formulae.md#pf)
+[PublishCommercialArtifact](https://github.com/dloa/sdk/blob/master/formulae.md#pc)
 
 ##Software Stack to run a hosted web node  
 
