@@ -1,6 +1,9 @@
-###Introduction  
+###Value Capture Stack  
+![alt text](https://raw.githubusercontent.com/dloa/sdk/master/captured%20value%20stack.png "Value Capture Stack")  
+
+###Protocol Introduction  
 The **Open Index Protocol** is a decentralized application (DApp) which unites a peer-to-peer distribution network (IPFS), a micropayments blockchain (Bitcoin), and a blockchain designed specifically to store messages.  
-  
+
 It’s primary purpose is to establish a **decentralized media index**, owned by no one collectively and, at the same time, each of it’s publishers individually. Thru the use of an open message schema and a simple set of mutually agreed-upon rules for core functions, the following permission-less **jobs** are created, which anyone can compete to capture value from:  
 
 •**Publishers** of original content (**artifacts**) to the index  
