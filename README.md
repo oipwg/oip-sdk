@@ -34,21 +34,20 @@ a web-hosted front end of some or all of the original content published to the I
 •**OIP-NPM** - a node.js module built to enable publishing and submitting changes to the OIP index. [Github](https://github.com/dloa/oip-npm)  
 •**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Email to request access]  
 •**hosted OIP API** - for reading and searching the OIP index.  
->>>v2/media/get/all [endpoint](https://api.alexandria.io/alexandria/v2/media/get/all)  
+v2/media/get/all [endpoint](https://api.alexandria.io/alexandria/v2/media/get/all)  
 v2/search [endpoint] (https://api.alexandria.io/alexandria/v2/search) & [usage](https://api.alexandria.io/docs/#get-a-specific-artifact)  
+•**Web Interfaces** - [Browser](https://github.com/dloa/alexandria-browser), [Publisher](https://github.com/dloa/publisher-web), [Paywall](https://github.com/dloa/paywall-web) & [TradeBot](https://github.com/dloa/alexandria-tradebot)  
 
-5. Build an interface using all of the above, or start by forking the components of ours. [Browser](https://github.com/dloa/alexandria-browser), [Publisher](https://github.com/dloa/publisher-web), [Paywall](https://github.com/dloa/paywall-web) & [TradeBot](https://github.com/dloa/alexandria-tradebot)  
-
-##To become an **AutoMiner**  
+###an **AutoMiner**  
 *(paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
 
-##To become an **AutoDistributor**  
+####To become an **AutoDistributor**  
 *(paid by publishers or patrons of content, governed by free floating market prices per MB stored per unit of time and per MB transmitted, limited by caps set per piece of content, since in most cases, a file having any more than ~20 seeders starts to see diminishing returns quickly)*  
 
-##To become a **Promoter**  
+####To become a **Promoter**  
 *(paid directly by end users when they pay for a piece of media the promoter put in front of them, mostly over social media platforms, percent of total sale they get is limited by preferences determined by publishers)*  
 
-##To become a **Publisher**  
+####To become a **Publisher**  
 *(Publishers are paid by end users when they connect with an audience that finds their content valuable, at whatever price they and their market agree upon)* 
 
 ####JSON standards:  
