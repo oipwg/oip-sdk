@@ -9,7 +9,7 @@ max ([Pf](#pf), [Pc](#pc))
 [V](#v) * [s](#s) / [blockchainsize](#blockchainsize)	 
 #####`Pc`  
 *Publish Fee, Commercial Artifacts.*
-if ( [C](#c) < [Cµ](#cµ), [C](#c), (( log ([C](#c)) - log ([Cµ](#cµ)) ) x ( [Cµ](#cµ) / [C](#c) ) x [D](#d) ) + [Cµ](#cµ) )	 
+if ( [C](#c) < [Cv](#cv), [C](#c), (( log ([C](#c)) - log ([Cv](#cv)) ) x ([Cv](#cv) / [C](#c) ) x [D](#d) ) + [Cv](#cv) )	 
 #####`V`  
 *Value of mined blocks in one day.*  
 [BlocksPerDay](#blocksperday) * [coinbasereward](#coinbasereward) * [fmdUSD](https://api.alexandria.io/flo-market-data/v1/getAll)	 
@@ -34,9 +34,9 @@ avg ([m](#m),[b](#b))
 #####`b`  
 sum of all of the sugBuy prices in a given artifact
 ∑ (b₁,b₂, ...)	 
-#####`Cµ`  
-*mean average of all artifact "cost"s in entire library*  
+#####`Cv`  
+*mean average of all artifact "cost"s in entire library.*  
 avg (C₁,C₂,...)  
 #####`D`  
 *diff between an artifacts "cost" and mean avg artifact cost in the library*  
-[C](#c) - [Cµ](#cµ)  
+[C](#c) - [Cv](#cm)  
