@@ -62,7 +62,7 @@ a web-hosted front end of some or all of the original content published to the I
 3.  Create a [miningrigrentals API key](https://www.miningrigrentals.com/account/apikey)  
 4.  Install and start the **autominer_api** application. [Github](https://github.com/dloa/autominer-api)  
 5.  Fund your miningrigrentals.com wallet with some bitcoin, and the autominer-api will automatically start renting rigs if market conditions allow your minimum margin to be met  
-*(paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
+*(autominers are paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
 
 ####**AutoDistributor**  
 *(paid by publishers or patrons of content, governed by free floating market prices per MB stored per unit of time and per MB transmitted, limited by caps set per piece of content, since in most cases, a file having any more than ~20 seeders starts to see diminishing returns quickly)*  
