@@ -71,7 +71,12 @@ a web-hosted front end of some or all of the original content published to the I
 *(paid directly by end users when they pay for a piece of media the promoter put in front of them, mostly over social media platforms, percent of total sale they get is limited by preferences determined by publishers)*  
 
 ####**Publisher**  
-*(Publishers are paid by end users when they connect with an audience that finds their content valuable, at whatever price they and their market agree upon)* 
+•How to register as a Publisher  
+•How to format [publish messages](https://github.com/oipwg/media-protocol#publish-artifact) properly  
+•Calculating the required [Publish Fee](https://github.com/oipwg/oip-sdk/blob/master/README.md#publishing-fee-formulae)  
+•Calculating the trade value of tokens from AutoMiner nodes  
+•Using TradeBot to exchange Bitcoin for Florincoin tokens to use for publishing - Hosted API endpoints for [checking tradable balance](api.alexandria.io/tradebot/flobalance) & [starting a trade](https://api.alexandria.io/tradebot/depositaddress?floaddress=**********************************)  
+*(Publishers are paid by end users when they connect with an audience that finds their content valuable, at whatever price they and their market agree upon)*  
 
 ---
 
