@@ -42,8 +42,8 @@ The OIP formula for calculating the **publish fee** is totally closed-loop and d
 [Publish Fee, Commercial Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pc)
 
 ##To check the **pool_margin** for the past 24 hours of a protocol compliant mining pool  
-1.  Lookup and store the current [block](https://api.alexandria.io/florincoin/getMiningInfo) height as **block**  
-2.  Use the **historian** summary [API POST endpoint](api.alexandria.io/alexandria/v1/historian/summary) using:
+1.  Lookup the current [block](https://api.alexandria.io/florincoin/getMiningInfo) height and store the result as **block**  
+2.  Use the **historian** summary [API POST endpoint](https://api.alexandria.io/alexandria/v1/historian/summary) using:
 <pre><code>
 {
     "min-block":block-2160,
