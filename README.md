@@ -1,3 +1,7 @@
+# Open Index Protocol Software Development Kit
+
+**Short, one-sentence description goes here**
+
 ###Protocol Introduction  
 <a href="https://alexandria.io/browser/#/511c251a4a5b8b9d25631b3f2617eb10412c2771971e202362c4054c878487ad" target="_blank"><img src="https://raw.githubusercontent.com/oipwg/oip-sdk/master/previewimage.png" alt="Protocol Animation"></a>
 
