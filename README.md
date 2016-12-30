@@ -1,5 +1,6 @@
 ###Protocol Introduction  
-<a href="https://alexandria.io/browser/#/511c251a4a5b8b9d25631b3f2617eb10412c2771971e202362c4054c878487ad" target="_blank"><img src="https://raw.githubusercontent.com/oipwg/oip-sdk/master/previewimage.png" alt="Protocol Animation"></a>
+You down with OIP?  
+<a href="https://alexandria.io/browser/#/511c251a4a5b8b9d25631b3f2617eb10412c2771971e202362c4054c878487ad" target="_blank">Watch protocol explanation video.</a>
 
 The **Open Index Protocol** is a decentralized application (DApp) which unites a peer-to-peer distribution network (IPFS), a micropayments blockchain (Bitcoin), and a blockchain designed specifically to store messages.  
 
