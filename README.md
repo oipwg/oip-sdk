@@ -1,5 +1,6 @@
-##Protocol Introduction   
-<a href="https://alexandria.io/browser/#/511c251a4a5b8b9d25631b3f2617eb10412c2771971e202362c4054c878487ad" target="_blank">Watch protocol explanation video.</a>
+## Protocol Introduction
+
+[Watch protocol explanation video](https://alexandria.io/browser/#/511c251a4a5b8b9d25631b3f2617eb10412c2771971e202362c4054c878487ad)
 
 The **Open Index Protocol** is a decentralized application (DApp) which unites a peer-to-peer distribution network (IPFS), a micropayments blockchain (Bitcoin), and a blockchain designed specifically to store messages.  
 
@@ -17,19 +18,20 @@ It’s primary purpose is to establish a fully decentralized **Index** of publis
 
 ---  
 
-##Protocol Software  
+## Protocol Software  
 
-###Reference "browser" node.js application  
+### Reference "browser" node.js application  
+
 •**Alexandria Browser** - Index browser reference client  |  [Github](https://github.com/dloa/alexandria-browser)   
 
-###Decentralized Full Node
+### Decentralized Full Node
 •**Index Blockchain Wallet Daemon** - [Florincoin official site](http://florincoin.org/)  |  [Github](https://github.com/florincoin/florincoin)  |  *(note:[Enable RPC access](https://github.com/dloa/alexandria-docs/blob/master/florincoin-lin64-install.md))*  
 •**IPFS Daemon** - [IPFS official site](https://ipfs.io/)  |  [Github](https://github.com/ipfs/go-ipfs)  |  [Prebuilt Installer](https://ipfs.io/docs/install/)  
 •**Payment Blockchain Wallet Daemon** - [Bitcoin](https://bitcoin.org/)  |  [Github](https://github.com/bitcoin/bitcoin/)  
 •**Decentralized Digital Rights Locker** - [Pockets](http://pockets.tokenly.com/)  |  [Github](https://github.com/tokenly/pockets)  
 •**OIP Daemon** - a GoLang daemon for the OIP protocol. Closed repo currently, pending security audit  |  [Request access](mailto:devon@alexandria.io)  
 
-###Retailer node  
+### Retailer node  
 a web-hosted front end of some or all of the original content published to the Index  
 •[Decentralized Full Node](#decentralized-full-node)  
 •**OIP-NPM** - a node.js module built to enable publishing and submitting changes to the OIP index. [Github](https://github.com/dloa/oip-npm)  
@@ -38,13 +40,13 @@ a web-hosted front end of some or all of the original content published to the I
 •**Web Interfaces** - [Browser](https://github.com/dloa/alexandria-browser), [Publisher](https://github.com/dloa/publisher-web), [Paywall](https://github.com/dloa/paywall-web) & [TradeBot](https://github.com/dloa/alexandria-tradebot)  
 *(paid directly by end users when they pay for a piece of media the retailer put in front of them, mostly using suggestion algorithms within a given front end/marketplace, percent of total sale they get is limited by preferences determined by publishers)*  
 
-###**AutoMiner**  
+### **AutoMiner**  
 
-#####To run a **mining pool**  
+##### To run a **mining pool**  
 •**Pool Interface** - Node.js pool portal [Github](https://github.com/dloa/unified-node-open-mining-portal)  
 •**Pool Server** - Node.js stratum pool server [Github](https://github.com/dloa/node-merged-pool)  
 
-#####To check the average **pool_margin** for the past 24 hours of protocol compliant mining pools  
+##### To check the average **pool_margin** for the past 24 hours of protocol compliant mining pools  
 1.  Lookup the current **block** height and store the result as `block` ([hosted API endpoint](https://api.alexandria.io/florincoin/getMiningInfo) | [Github source](https://github.com/oipwg/txcomment-search-api)  
 2.  Use the **historian** summary [API POST endpoint](https://api.alexandria.io/alexandria/v1/historian/summary) using:
 <code><pre>{
@@ -53,7 +55,7 @@ a web-hosted front end of some or all of the original content published to the I
 }</pre></code>  
 3.  The **averages** array will include a field labeled **pool_margin**. If this amount is in the ballpark of your target margin on top of mining costs, you may wish to [become an autominer](#to-become-an-autominer)  
 
-#####**AutoMiner**  
+##### **AutoMiner**  
 1.  Create an account on miningrigrentals.com  
 2.  Make a new “pool profile”  
 <code><pre>algo: Scrypt  
@@ -66,13 +68,13 @@ a web-hosted front end of some or all of the original content published to the I
 5.  Fund your miningrigrentals.com wallet with some bitcoin, and the autominer-api will automatically start renting rigs if market conditions allow your minimum margin to be met  
 *(autominers are paid by publishers for their actual costs plus their requested margin, governed by data-driven market feedback mechanisms, limited by demand for publishing)*  
 
-###**AutoDistributor**  
+### **AutoDistributor**  
 *(paid by publishers or patrons of content, governed by free floating market prices per MB stored per unit of time and per MB transmitted, limited by caps set per piece of content, since in most cases, a file having any more than ~20 seeders starts to see diminishing returns quickly)*  
 
-###**Promoter**  
+### **Promoter**  
 *(paid directly by end users when they pay for a piece of media the promoter put in front of them, mostly over social media platforms, percent of total sale they get is limited by preferences determined by publishers)*  
 
-###**Publisher**  
+### **Publisher**  
 •How to register as a Publisher  
 •How to format [publish messages](https://github.com/oipwg/media-protocol#publish-artifact) properly  
 •Calculating the required [Publish Fee](https://github.com/oipwg/oip-sdk/blob/master/README.md#publishing-fee-formulae)  
@@ -82,14 +84,14 @@ a web-hosted front end of some or all of the original content published to the I
 
 ---
 
-###JSON standards:  
+### JSON standards:  
 [multipartData](https://github.com/dloa/media-protocol#multipart-data)  
 [publishArtifact](https://github.com/dloa/media-protocol#publish-artifact)  
 [editArtifact](https://github.com/dloa/media-protocol#edit-artifact)  
 [transferArtifact](https://github.com/dloa/media-protocol#transfer-artifact)  
 [deactivateArtifact](https://github.com/dloa/media-protocol#deactivate-artifact)  
 
-###Publishing fee formulae:  
+### Publishing fee formulae:  
 The OIP formula for calculating the **publish fee** is closed-loop and based on inputs found either in the Florincoin blockchain or in the publish message. It is calculated as a function of either (1) commercial value to the Publisher or (2) if it is being offered for free, as a function of its size in the blockchain.  
   
 [Publish Fee, Free Artifact](https://github.com/dloa/sdk/blob/master/formulae.md#pf)  
@@ -97,5 +99,5 @@ The OIP formula for calculating the **publish fee** is closed-loop and based on 
 
 ---
 
-##Captured Value  
+## Captured Value  
 ![alt text](https://raw.githubusercontent.com/dloa/sdk/master/captured%20value%20stack.png "Value Capture Stack")  
