@@ -25,7 +25,7 @@ It’s primary purpose is to establish a fully decentralized **Index** of publis
 •**Alexandria Browser** - Index browser reference client  |  [Github](https://github.com/dloa/alexandria-browser)   
 
 ### Decentralized Full Node
-•**Index Blockchain Wallet Daemon** - [Florincoin official site](http://florincoin.org/)  |  [Github](https://github.com/florincoin/florincoin)  |  *(note:[Enable RPC access](https://github.com/dloa/alexandria-docs/blob/master/florincoin-lin64-install.md))*  
+•**Index Blockchain Wallet Daemon** - [Florincoin official site](http://florincoin.org/)  |  [Github](https://github.com/floblockchain/flo)  |  *(note:[Enable RPC access](https://github.com/dloa/alexandria-docs/blob/master/florincoin-lin64-install.md))*  
 •**IPFS Daemon** - [IPFS official site](https://ipfs.io/)  |  [Github](https://github.com/ipfs/go-ipfs)  |  [Prebuilt Installer](https://ipfs.io/docs/install/)  
 •**Payment Blockchain Wallet Daemon** - [Bitcoin](https://bitcoin.org/)  |  [Github](https://github.com/bitcoin/bitcoin/)  
 •**Decentralized Digital Rights Locker** - [Pockets](http://pockets.tokenly.com/)  |  [Github](https://github.com/tokenly/pockets)  
